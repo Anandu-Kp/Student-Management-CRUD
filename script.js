@@ -51,7 +51,7 @@ function editData(id) {
     editForm.innerHTML = `<form action="" id="editForm">
                             <input placeholder="Name" required value="${obj.name}" type="text" id="name" name="name">
                             <input placeholder="Email" value="${obj.email}"  type="email" name="email">
-                            <input placeholder="GPA" value="${obj.gpa}"  type="text" name="gpa">
+                            <input placeholder="grade" value="${obj.grade}"  type="text" name="grade">
                             <input placeholder="Age" value="${obj.age}"  type="text" name="age">
                             <input placeholder="Degree" value="${obj.degree}"  type="text" name="degree">
 
@@ -68,14 +68,14 @@ function editData(id) {
         let formElements = event.target;
         let name = formElements["name"].value;
         let email = formElements["email"].value;
-        let gpa = formElements["gpa"].value;
+        let grade = formElements["grade"].value;
         let age = formElements["age"].value;
         let degree = formElements["degree"].value;
         let obj = {
             id: id,
             name: name,
             email: email,
-            gpa: gpa,
+            grade: grade,
             age: age,
             degree: degree
         }
@@ -101,8 +101,8 @@ function editData(id) {
                             <td class="email">
                                 <span>${student.email}</span>
                             </td>
-                            <td class="gpa">
-                                <span>${student.gpa}</span>
+                            <td class="grade">
+                                <span>${student.grade}</span>
                             </td>
                             <td class="age">
                                 <span>${student.age}</span>
@@ -148,7 +148,7 @@ function findObj(id) {
 }
 
 function addToTable(obj) {
-    let { id, name, email, gpa, age, degree } = obj;
+    let { id, name, email, grade, age, degree } = obj;
     let tableRow = document.createElement("tr");
     tableRow.id = "table-row" + id;
     tableRow.innerHTML = `<td class="id">
@@ -160,8 +160,8 @@ function addToTable(obj) {
                         <td class="email">
                             <span>${email}</span>
                         </td>
-                        <td class="gpa">
-                            <span>${gpa}</span>
+                        <td class="grade">
+                            <span>${grade}</span>
                         </td>
                         <td class="age">
                             <span>${age}</span>
@@ -186,14 +186,14 @@ function addStudent(event) {
     let formElements = event.target;
     let name = formElements["name"].value;
     let email = formElements["email"].value;
-    let gpa = formElements["gpa"].value;
+    let grade = formElements["grade"].value;
     let age = formElements["age"].value;
     let degree = formElements["degree"].value;
     let obj = {
         id: id,
         name: name,
         email: email,
-        gpa: gpa,
+        grade: grade,
         age: age,
         degree: degree
     }

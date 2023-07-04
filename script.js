@@ -54,7 +54,7 @@ function editData(id) {
                             <input placeholder="grade" value="${obj.grade}"  type="text" name="grade">
                             <input placeholder="Age" value="${obj.age}"  type="text" name="age">
                             <input placeholder="Degree" value="${obj.degree}"  type="text" name="degree">
-
+                            <br>
                             <button >Edit Student</button>
                         </form>`;
 

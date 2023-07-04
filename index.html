@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Student Management CRUD</title>
+</head>
+
+<body>
+    <div class="form" id="form-container">
+        <span>Student Management CRUD</span>
+        <form action="" id="form">
+            <input placeholder="Name" required type="text" id="name" name="name">
+            <input placeholder="Email" required type="email" name="email">
+            <input placeholder="GPA" required type="text" name="gpa">
+            <input placeholder="Age" required type="text" name="age">
+            <input placeholder="Degree" required type="text" name="degree">
+
+            <button style="background-color: white; color: black;" id="add-student">Add Student</button>
+        </form>
+    </div>
+
+    <div class="search">
+        <input placeholder="Search By Name, email or degree" type="text" id="search-data" name="search">
+    </div>
+
+    <div class="table">
+        <table>
+
+            <thead>
+                <tr>
+                    <td class="id">Id</td>
+                    <td class="name">Name</td>
+                    <td class="email">Email</td>
+                    <td class="gpa">GPA</td>
+                    <td class="age">Age</td>
+                    <td class="options">
+
+                        <span>Degree</span>
+
+
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- <tr> -->
+                <!-- <td class="id">
+                        <span>Id</span>
+                    </td>
+                    <td class="name">
+                        <span>Name</span>
+                    </td>
+                    <td class="email">
+                        <span>email</span>
+                    </td>
+                    <td class="gpa">
+                        <span>gpa</span>
+                    </td>
+                    <td class="age">
+                        <span>age</span>
+                    </td>
+                    <td class="options">
+
+                        <span>degree</span>
+                        <div class="edit-delete">
+                            <img src="./resources/edit 1.png" alt="edit" id="edit">
+                            <img src="./resources/trash-2 1.png" alt="delete" id="delete">
+                        </div>
+
+                    </td> -->
+                <!-- </tr> -->
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

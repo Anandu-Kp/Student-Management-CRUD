@@ -1,0 +1,106 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+    color: #FFFFFF;
+    padding: 50px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+
+/* ----form----- */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form span {
+    font-size: 44px;
+    font-weight: 200;
+}
+
+/* 
+form {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 10px;
+} */
+
+form input {
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    padding: 10px;
+    height: 30px;
+    width: 400px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+
+}
+
+form button {
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    height: 40px;
+    width: 500px;
+}
+
+/* ----search---- */
+
+.search {
+    width: 100%;
+}
+
+#search-data {
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    padding: 10px;
+    height: 30px;
+    width: 95%;
+}
+
+
+/* ----Table---- */
+
+table {
+    width: 96.5%;
+    border-collapse: collapse;
+    border: 1px solid #FFFFFF;
+}
+
+thead tr {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+td {
+    padding: 15px;
+    border-left: 1px solid #FFFFFF;
+}
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.edit-delete {
+    display: flex;
+    gap: 20px;
+    padding: 0px 20px;
+}
